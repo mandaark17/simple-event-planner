@@ -11,9 +11,9 @@ function createTimeBlocks() {
   // Using for loop to make html elements
   for (var hour = 9; hour <= 17; hour++) {
     var timeBlockEl = $("<div>").addClass("time-block row");
-    var hourEl = $("<div>").addClass("hour col-md-1").text(formatHour(hour));
+    var hourEl = $("<div>").addClass("hour col-md-1 ").text(formatHour(hour));
     var textAreaEl = $("<textarea>").addClass(getTimeBlockClass(hour, currentHour)).attr("data-hour", hour);
-    var saveBtnEl = $("<button>").addClass("saveBtn col-md-1").html('<i class="fas fa-save"></i>');
+    var saveBtnEl = $("<button>").addClass("saveBtn col-md-1").html('<i class="fas fa-save">Save</i>');
 
     timeBlockEl.append(hourEl, textAreaEl, saveBtnEl);
     $(".container").append(timeBlockEl);

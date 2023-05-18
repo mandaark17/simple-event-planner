@@ -1,89 +1,89 @@
 body {
-    font-family: 'Courier New', Courier, monospace, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #2c3397;
-    color: #fff;
-    font-size: larger;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  h1 {
-    margin: 0;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-  }
-  
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2c3397;
+  color: #fff;
+  font-size: larger;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.time-block {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.hour {
+  flex: 0 0 100px;
+  height: auto;
+  color: #fff;
+  background-color: #31ade6;
+  border-radius: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+textarea {
+  flex: 1;
+  height: 40px;
+  margin: 0 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.saveBtn {
+  flex: 0 0 50px;
+  height: 50px;
+  background-color: #31ade6;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Determines color based on hour */
+.past {
+  background-color: #b4adad;
+}
+.present {
+  background-color: #7afa76;
+  color: #fff;
+}
+.future {
+  background-color: #d3bbe7;
+}
+
+.saveBtn:hover {
+  background-color: #97b3e4;
+}
+.saveBtn i {
+  pointer-events: none;
+}
+
+@media (max-width: 600px) {
   .time-block {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
+    flex-wrap: wrap;
   }
-  
+
   .hour {
-    flex: 0 0 100px;
+    flex: 0 0 100%;
+    margin-bottom: 10px;
   }
-  
+
   textarea {
-    flex: 1;
-    height: 40px;
-    margin: 0 10px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    flex: 0 0 100%;
   }
-  
-  .saveBtn {
-    flex: 0 0 50px;
-    height: 50px;
-    background-color: #31ade6;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .past {
-    background-color: #d3d3d3;
-  }
-  
-  .present {
-    background-color: #ff6961;
-    color: #fff;
-  }
-  
-  .future {
-    background-color: #77dd77;
-  }
-  
-  .saveBtn:hover {
-    background-color: #97b3e4;
-  }
-  
-  .saveBtn i {
-    pointer-events: none;
-  }
-  
-  @media (max-width: 600px) {
-    .time-block {
-      flex-wrap: wrap;
-    }
-  
-    .hour {
-      flex: 0 0 100%;
-      margin-bottom: 10px;
-    }
-  
-    textarea {
-      flex: 0 0 100%;
-    }
-  }
-  
+}
