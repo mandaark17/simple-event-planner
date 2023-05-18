@@ -28,7 +28,7 @@ header {
   flex: 0 0 100px;
   height: auto;
   color: #fff;
-  background-color: #31ade6;
+  background-color: #000;
   border-radius: 100%;
   text-align: center;
   font-weight: bold;
@@ -43,6 +43,7 @@ textarea {
   border-radius: 4px;
 }
 
+/* All btn stuff */
 .saveBtn {
   flex: 0 0 50px;
   height: 50px;
@@ -53,25 +54,28 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
 }
-
-/* Determines color based on hour */
-.past {
-  background-color: #b4adad;
-}
-.present {
-  background-color: #7afa76;
-  color: #fff;
-}
-.future {
-  background-color: #d3bbe7;
-}
-
 .saveBtn:hover {
   background-color: #97b3e4;
 }
 .saveBtn i {
   pointer-events: none;
 }
+
+/* Determines color based on hour */
+.past {
+  background-color: #e4e0e0;
+  border-style: dotted;
+}
+.present {
+  background-color: #7afa76;
+  border-color: #000;
+  border-style: dashed;
+}
+.future {
+  background-color: #d3bbe7;
+  border-color: #000;
+}
+
 
 @media (max-width: 600px) {
   .time-block {
