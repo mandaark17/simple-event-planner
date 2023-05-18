@@ -1,7 +1,7 @@
 # Simple-event-planner
 <img src="./assets/planner.png">
 
-<a href="">Simple Planner</a>
+<a href="https://mandaark17.github.io/simple-event-planner/">Simple Planner</a>
 
 ## Description
 

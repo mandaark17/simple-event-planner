@@ -48,6 +48,7 @@ function loadEvents() {
     var savedEvent = localStorage.getItem("event_" + hour);
     if (savedEvent) {
       $(this).find("textarea").val(savedEvent);
+      alert("Saved!");
     }
   });
 }
