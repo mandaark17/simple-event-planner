@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .time-block {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hour {
+    flex: 0 0 100px;
+  }
+  
+  textarea {
+    flex: 1;
+    height: 40px;
+    margin: 0 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .saveBtn {
+    flex: 0 0 40px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .past textarea {
+    background-color: #d3d3d3;
+  }
+  
+  .present textarea {
+    background-color: #ff6961;
+    color: #fff;
+  }
+  
+  .future textarea {
+    background-color: #77dd77;
+  }
+  
+  .saveBtn:hover {
+    background-color: #555;
+  }
+  
+  .saveBtn i {
+    pointer-events: none;
+  }
+  
+  @media (max-width: 600px) {
+    .time-block {
+      flex-wrap: wrap;
+    }
+  
+    .hour {
+      flex: 0 0 100%;
+      margin-bottom: 10px;
+    }
+  
+    textarea {
+      flex: 0 0 100%;
+    }
+  }
+  
