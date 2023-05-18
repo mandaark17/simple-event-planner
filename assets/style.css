@@ -1,12 +1,13 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
     margin: 0;
     padding: 0;
   }
   
   header {
-    background-color: #333;
+    background-color: #2c3397;
     color: #fff;
+    font-size: larger;
     text-align: center;
     padding: 20px 0;
   }
@@ -41,29 +42,30 @@ body {
   }
   
   .saveBtn {
-    flex: 0 0 40px;
-    background-color: #333;
+    flex: 0 0 50px;
+    height: 50px;
+    background-color: #31ade6;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
   
-  .past textarea {
+  .past {
     background-color: #d3d3d3;
   }
   
-  .present textarea {
+  .present {
     background-color: #ff6961;
     color: #fff;
   }
   
-  .future textarea {
+  .future {
     background-color: #77dd77;
   }
   
   .saveBtn:hover {
-    background-color: #555;
+    background-color: #97b3e4;
   }
   
   .saveBtn i {
